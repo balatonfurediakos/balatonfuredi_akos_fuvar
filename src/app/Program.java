@@ -32,7 +32,6 @@ public class Program {
     }//main
 
     private static double osszesFuvarErteke() throws IOException {
-        ini();
         double osszErtek = 0;
         for (Fuvar fuvar : fuvarok) {
             osszErtek += fuvar.getOsszeg();
@@ -41,7 +40,6 @@ public class Program {
     }
 
     private static String legdragabbFuvarRendszama() throws IOException {
-        ini();
         String legdragabbRendszam = fuvarok.get(0).getRsz();
         double legNagyobbOsszeg = fuvarok.get(0).getOsszeg();
         for (Fuvar fuvar : fuvarok) {
